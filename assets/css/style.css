@@ -16,6 +16,12 @@ a, button {
   cursor: pointer;
   outline: 0 none;
 }
+.btn {
+  font-family: "Varela", sans-serif;
+  background-color: #ffa36e;
+  color: #090909;
+  border-radius: 4px;
+}
 
 a:hover, a:focus {
   outline: 0 none;
@@ -318,8 +324,11 @@ html, body {
   z-index: 1005;
 }
 
-.site-navigation .navbar-nav {
-  padding-top: 23px;
+.navbar-nav > li {
+  margin-right: 20px;
+}
+.navbar-nav .page-scroll:first-child {
+  margin-right: 40px;
 }
 
 .site-navigation .navbar-nav > li > a {
