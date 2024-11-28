@@ -614,7 +614,7 @@ html, body {
 .site-section h2 {
   font-family: "Varela", sans-serif;
   margin: 0;
-  font-size: 32px;
+  font-size: 48px;
   color: #ffa36e;
   text-align: center;
   text-transform: uppercase;
@@ -624,9 +624,9 @@ html, body {
   position: relative;
   font-family: "Varela", sans-serif;
   margin: 15px 0 0;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 16px;
-  color: #666;
+  color: #9b8b8b;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
