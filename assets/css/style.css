@@ -5,6 +5,15 @@
  * Version: 1.0
  */
 
+.img-about-mine {
+  display: block;
+  width: 200%;
+  height: 200%;
+  max-width: 200%;
+  max-height: 200%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 /* CUSTOM RESETS
 ================================================== */
@@ -16,6 +25,7 @@ a, button {
   cursor: pointer;
   outline: 0 none;
 }
+
 .btn {
   font-family: "Varela", sans-serif;
   background-color: #ffa36e;
