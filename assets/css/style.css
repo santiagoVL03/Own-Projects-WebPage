@@ -2402,3 +2402,63 @@ textarea.form-control {
     width: 36px;
   }
 }
+
+
+.timeline-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  grid-gap: 15px; /* Espaciado entre las imágenes */
+  margin-top: 10px;
+  justify-items: center; /* Centra las imágenes horizontalmente */
+}
+
+.timeline-gallery .gallery-img {
+  width: 400%; /* Ocupa el ancho del contenedor */
+  max-width: 300px; /* Tamaño máximo para las imágenes */
+  height: auto; /* Mantiene la proporción original */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  transition: transform 0.2s ease-in-out; /* Efecto de zoom al pasar el cursor */
+}
+
+.timeline-gallery .gallery-img:hover {
+  transform: scale(3.3); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .timeline-gallery {
+      flex-wrap: wrap; /* Permite que las imágenes se ajusten en dispositivos más pequeños */
+  }
+  .timeline-gallery .gallery-img {
+      width: 45%; /* Tamaño adaptativo en pantallas pequeñas */
+      max-width: 100px; /* Reducción del tamaño máximo */
+  }
+}
+
+ 
+.gallery-imgUsuario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  grid-gap: 1px; /* Espaciado entre las imágenes */
+  margin-top: 10px;
+  justify-items: center; /* Centra las imágenes horizontalmente */
+}
+
+.gallery-imgUsuario img {
+  width: 150%; /* Ocupa el ancho del contenedor */
+  max-width: 150px; /* Tamaño máximo para las imágenes */
+  height: auto; /* Mantiene la proporción original */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+  transition: transform 0.2s ease-in-out; /* Efecto de zoom al pasar el cursor */
+}
+
+.gallery-imgUsuario img:hover {
+  transform: scale(3.3); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .gallery-imgUsuario {
+      grid-template-columns: 1fr; /* En pantallas pequeñas, las imágenes ocupan una columna */
+  }
+}
